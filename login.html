@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/Login/login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img src="/SRC/Survey_Corps_Logo.webp" width="60px" height="75px"></img></a>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki" target="_blank">About</a>
+            <a href="https://github.com/i-am-faith?tab=repositories" target="_blank">Projects</a>
+            <a href="https://linktr.ee/i_am_faith_007" target="_blank">Contact</a>
+            <button class="btnLogin-popup" onclick="location.href='register.html'">Register</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <!-- Login -->
+        <div class="form-box login">
+            <div>
+                <h2>Login</h2>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label style="color:white;" for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="key-outline"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label style="color:white;" for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <input type="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <a href="https://www.google.co.in/" target="_blank">
+                    <button type="submit" class="btn" onclick="validate()">Login</button>
+                </a>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="/Login/register.html" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="str_music">
+        <button style="border: none; background: transparent;" id="btn_music" onclick="audio.play();">
+            <img src="/SRC/R.png" width="50px" height="50px">
+        </button>
+    </div>
+
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "./AOT LOGIN MP3.mp3";
+    </script>
+    <script type="text/javascript" src="/Login/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
