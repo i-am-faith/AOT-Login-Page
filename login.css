@@ -24,7 +24,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: url(/SRC/AOT\ 2.jpg) no-repeat;
+    background: url(AOT\ 2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
