@@ -86,6 +86,7 @@ header {
     margin-left: 40px;
 }
 
+
 .navigation a::after
 {
     content: '';
