@@ -59,6 +59,7 @@ body
     background: url(aot.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 /* scrollbar  */
